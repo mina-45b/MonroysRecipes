@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chats">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/resource_return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView1"
+        style="@style/SearchViewStyle"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="@string/search" />
+
+
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/messages"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView1"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintTop_toTopOf="@+id/searchView1" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/calls"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton5" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/messages"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/request"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView1" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:padding="5sp"
+        android:src="@drawable/message_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view12"
+        app:shapeAppearanceOverlay="@style/roundeimageview"
+        app:strokeColor="@color/gray_claro"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/messageUser"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView9"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView9" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/numMessage"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/newMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/textView38"
+        app:layout_constraintStart_toEndOf="@+id/textView38"
+        app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="10sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/decor"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintStart_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_light"
+        android:text="@string/timeMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintStart_toEndOf="@+id/textView39"
+        app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/new_message"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView10"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:padding="5sp"
+        android:src="@drawable/message_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView9"
+        app:shapeAppearanceOverlay="@style/roundeimageview"
+        app:strokeColor="@color/gray_claro"
+        app:strokeWidth="2dp" />
+
+
+    <TextView
+        android:id="@+id/nameUser2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/messageUser"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView10"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView10" />
+
+    <TextView
+        android:id="@+id/numMessages2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/numMessage"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView10"
+        app:layout_constraintTop_toBottomOf="@+id/nameUser2" />
+
+    <TextView
+        android:id="@+id/newMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/newMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/numMessages2"
+        app:layout_constraintStart_toEndOf="@+id/numMessages2"
+        app:layout_constraintTop_toTopOf="@+id/numMessages2" />
+
+
+    <TextView
+        android:id="@+id/decor2"
+        android:layout_width="10sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/decor"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newMessage2"
+        app:layout_constraintStart_toEndOf="@+id/newMessage2"
+        app:layout_constraintTop_toTopOf="@+id/newMessage2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_light"
+        android:text="@string/timeMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/decor2"
+        app:layout_constraintStart_toEndOf="@+id/decor2"
+        app:layout_constraintTop_toTopOf="@+id/decor2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/new_message"
+        app:layout_constraintBottom_toBottomOf="@+id/newMessage2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameUser2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView11"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:padding="5sp"
+        android:src="@drawable/message_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView10"
+        app:shapeAppearanceOverlay="@style/roundeimageview"
+        app:strokeColor="@color/gray_claro"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/nameUser3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/messageUser"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView11"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView11" />
+
+    <TextView
+        android:id="@+id/numMessages3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/numMessage"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView11"
+        app:layout_constraintTop_toBottomOf="@+id/nameUser3" />
+
+    <TextView
+        android:id="@+id/newMessage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/newMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/numMessages3"
+        app:layout_constraintStart_toEndOf="@+id/numMessages3"
+        app:layout_constraintTop_toTopOf="@+id/numMessages3"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/decor3"
+        android:layout_width="10sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/decor"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/newMessage3"
+        app:layout_constraintTop_toTopOf="@+id/newMessage3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_light"
+        android:text="@string/timeMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/decor3"
+        app:layout_constraintStart_toEndOf="@+id/decor3"
+        app:layout_constraintTop_toTopOf="@+id/decor3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/new_message"
+        app:layout_constraintBottom_toBottomOf="@+id/newMessage3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameUser3" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView12"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:padding="5sp"
+        android:src="@drawable/message_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView11"
+        app:shapeAppearanceOverlay="@style/roundeimageview"
+        app:strokeColor="@color/gray_claro"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/nameUser4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/messageUser"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView12"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView12" />
+
+    <TextView
+        android:id="@+id/numMessages4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/numMessage"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView12"
+        app:layout_constraintTop_toBottomOf="@+id/nameUser4" />
+
+    <TextView
+        android:id="@+id/newMessage4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/newMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/numMessages4"
+        app:layout_constraintStart_toEndOf="@+id/numMessages4"
+        app:layout_constraintTop_toTopOf="@+id/numMessages4" />
+
+
+    <TextView
+        android:id="@+id/decor4"
+        android:layout_width="10sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/decor"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newMessage4"
+        app:layout_constraintStart_toEndOf="@+id/newMessage4"
+        app:layout_constraintTop_toTopOf="@+id/newMessage4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_light"
+        android:text="@string/timeMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/decor4"
+        app:layout_constraintStart_toEndOf="@+id/decor4"
+        app:layout_constraintTop_toTopOf="@+id/decor4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/new_message"
+        app:layout_constraintBottom_toBottomOf="@+id/newMessage4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameUser4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Configura las esquinas redondeadas -->
+    <corners android:radius="20dp" />
+
+    <!-- Añade un borde -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/gray_claro" /> <!-- Cambia este color según tus necesidades -->
+</shape>

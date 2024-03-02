@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartLogin">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/resource_return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/back"/>
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20" />
+
+    <TextView
+        android:id="@+id/introduction2"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfit_light"
+        android:gravity="center"
+        android:text="@string/welcome2"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/welcome"
+        app:layout_constraintStart_toStartOf="@+id/welcome"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/register_rectangle"
+        android:fontFamily="@font/outfit_bold"
+        android:hint="@string/user"
+        android:padding="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/introduction2"
+        app:layout_constraintStart_toStartOf="@+id/introduction2"
+        app:layout_constraintTop_toBottomOf="@+id/introduction2" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_rectangle"
+        android:fontFamily="@font/outfit_bold"
+        android:hint="@string/password"
+        android:padding="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumber"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+    <TextView
+        android:id="@+id/forgotPassword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/password_f"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+    <Button
+        android:id="@+id/btnSumit"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/btnSumit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnSumit"
+        app:layout_constraintTop_toBottomOf="@+id/btnSumit">
+
+        <ImageView
+            android:id="@+id/rectangle29"
+            android:layout_width="110dp"
+            android:layout_height="16dp"
+            android:paddingEnd="10sp"
+            android:contentDescription="@string/rectangle"
+            android:src="@drawable/rectangle_29"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="493dp" />
+
+        <TextView
+            android:id="@+id/singOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/othersing"
+            tools:layout_editor_absoluteX="183dp"
+            tools:layout_editor_absoluteY="484dp" />
+
+        <ImageView
+            android:id="@+id/rectangle30"
+            android:layout_width="110dp"
+            android:layout_height="16dp"
+            android:paddingStart="10sp"
+            android:contentDescription="@string/rectangle"
+            android:src="@drawable/rectangle_30"
+            tools:layout_editor_absoluteX="286dp"
+            tools:layout_editor_absoluteY="493dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.10">
+
+        <ImageButton
+            android:layout_margin="20sp"
+            android:id="@+id/facebook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/facebook"
+            android:contentDescription="@string/facebook"/>
+
+        <ImageButton
+            android:layout_margin="20sp"
+            android:id="@+id/google"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/google_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/facebook"
+            android:contentDescription="@string/google"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

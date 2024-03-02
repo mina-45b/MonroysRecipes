@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/minus_square"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/listRecipe1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/list1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/listText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/outfit_bold"
+            android:text="@string/recipe1"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/userprofile1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/userprofile1"
+            app:layout_constraintTop_toTopOf="@+id/listRecipe1" />
+
+        <LinearLayout
+            android:id="@+id/userprofile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/listRecipe1"
+            app:layout_constraintStart_toEndOf="@+id/listRecipe1"
+            app:layout_constraintTop_toBottomOf="@+id/listText1"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5sp"
+                android:src="@drawable/reelonep"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/yellow"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5sp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/username1"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/goListRecipe1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/return2"
+            app:layout_constraintBottom_toBottomOf="@+id/userprofile1"
+            app:layout_constraintStart_toEndOf="@+id/userprofile1"
+            app:layout_constraintTop_toTopOf="@+id/listText1" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listRecipe1">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing1" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing3" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing4" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing6" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing7" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing8" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing9" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing10" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing11" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing12" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing13" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing14" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R1Ing15" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/minus_square"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <ImageView
+            android:id="@+id/listRecipe2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/list2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <TextView
+            android:id="@+id/listText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/outfit_bold"
+            android:text="@string/nameList2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/userprofile2"
+            app:layout_constraintTop_toTopOf="@+id/listRecipe2" />
+
+        <LinearLayout
+            android:id="@+id/userprofile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/listRecipe2"
+            app:layout_constraintStart_toEndOf="@+id/listRecipe2"
+            app:layout_constraintTop_toBottomOf="@+id/listText2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5sp"
+                android:src="@drawable/list_user2"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/gray_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5sp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/listUser2"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/goListRecipe2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/return2"
+            app:layout_constraintBottom_toBottomOf="@+id/userprofile2"
+            app:layout_constraintStart_toEndOf="@+id/userprofile2"
+            app:layout_constraintTop_toTopOf="@+id/listText2"
+            app:layout_constraintVertical_bias="0.50" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listRecipe2">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing1" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing3" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing4" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing6" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing7" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing8" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing9" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing10" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R2Ing11" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:layout_editor_absoluteX="44dp" />
+
+        <ImageView
+            android:id="@+id/listRecipe3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/list3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+        <ImageButton
+            android:id="@+id/goListRecipe3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/return2"
+            app:layout_constraintBottom_toBottomOf="@+id/userprofile3"
+            app:layout_constraintStart_toEndOf="@+id/userprofile3"
+            app:layout_constraintTop_toTopOf="@+id/listText3" />
+
+        <LinearLayout
+            android:id="@+id/userprofile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/listRecipe3"
+            app:layout_constraintStart_toEndOf="@+id/listRecipe3"
+            app:layout_constraintTop_toBottomOf="@+id/listText3"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5sp"
+                android:src="@drawable/list_user3"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/gray_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5sp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/listUser3"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/minus_square"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.956"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/listText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/outfit_bold"
+            android:text="@string/nameList3"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/userprofile3"
+            app:layout_constraintTop_toTopOf="@+id/listRecipe3" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:paddingBottom="50dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listRecipe3">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R3Ing1" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R3Ing2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R3Ing3" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R3Ing4" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R3Ing5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R3Ing6" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R3Ing7" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R3Ing8" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R3Ing9" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray_claro"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/R3Ing10" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

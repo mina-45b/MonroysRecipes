@@ -1,0 +1,349 @@
+<resources>
+    <string name="app_name">Monroy\'s Recipes</string>
+
+    <integer name="splash_screen_duration">3000
+    </integer> <!-- Duración en milisegundos (3 segundos en este ejemplo) -->
+
+    <string-array name="addRecipes">
+        <item>New recipe</item>
+        <item>New short</item>
+    </string-array>
+
+
+    <string-array name="shortRecipes">
+        <item>Following</item>
+        <item>All Recipes</item>
+    </string-array>
+
+
+    <string-array name="gallery">
+        <item>Recents</item>
+        <item>Favorites</item>
+        <item>Camera</item>
+    </string-array>
+
+    <string name="login">Log in</string>
+    <string name="register">Register</string>
+    <string name="icono">Icono</string>
+    <string name="welcome">Welcome Back</string>
+    <string name="welcome2">Thousands of new recipes are published daily.</string>
+    <string name="user">User Name</string>
+    <string name="password">Password</string>
+    <string name="password_f">Forgot Password ?</string>
+    <string name="othersing">Or Sign up With</string>
+    <string name="welcome3">Welcome</string>
+    <string name="welcome4">Create your own recipe book and share it with others.</string>
+    <string name="register_o">Username , Email and Phone Number</string>
+    <string name="register_t">New Password</string>
+    <string name="register_th">Confirm New Password </string>
+    <string name="google">Sing up google</string>
+    <string name="facebook">Sing up facebook</string>
+    <string name="back">Back</string>
+    <string name="rectangle">rectangle</string>
+    <string name="password_f_text">Don\'t worry about it. It happens. Please enter your phone number and we will send you a verification code.</string>
+    <string name="password_f_phone">+91-8976500001</string>
+    <string name="cont">continue</string>
+    <string name="verifyCode">VERIFICATION CODE</string>
+    <string name="enterCode">Enter the sent code</string>
+    <string name="dontCode">Don’t receive code ? Re-send</string>
+    <string name="code">2</string>
+    <string name="sumit">Sumit</string>
+    <string name="username1">directpalate</string>
+    <string name="username2">home.cooking</string>
+    <string name="username3">simplyliving</string>
+    <string name="username4">tute.kitchen</string>
+    <string name="username5">cooking_w_allan</string>
+    <string name="username6">cookwhitme</string>
+    <string name="username7">grandmas</string>
+    <string name="newPassword">Enter your new password</string>
+    <string name="newPassword1">Confirm</string>
+
+
+    <string name="descripcontet">Imagen</string>
+
+    <string name="options1">I am not interested</string>
+    <string name="options2">Account information</string>
+    <string name="options3">Report</string>
+
+    <string name="recipe1">Chicken lasagne</string>
+    <string name="clock1">1:50 h</string>
+    <string name="group1">6</string>
+
+    <string name="recipe2">Spicy beans</string>
+    <string name="clock2">2:10 h</string>
+    <string name="group2">3</string>
+
+    <string name="recipe3">Oreo ice cream</string>
+    <string name="clock3">45 min</string>
+    <string name="group3">3</string>
+
+    <string name="recipe4">Cupcakes</string>
+    <string name="clock4">2:10 h</string>
+    <string name="group4">10</string>
+
+
+    <string name="search">Search here</string>
+
+    <string name="searchTitle">Daily Recipes</string>
+    <string name="searchRecipe1">Pumpkin cheesecake</string>
+    <string name="clockSearch1">2:30 h</string>
+    <string name="groupSearch1">8-10</string>
+    <string name="searchRecipe2">Figs with gongorzola</string>
+    <string name="clockSearch2">15 min</string>
+    <string name="groupSearch2">5</string>
+    <string name="searcUser1">koffeebreak</string>
+    <string name="searcUser2">virginia_de4</string>
+
+    <string name="categories">Categories</string>
+    <string name="categories1">Salad</string>
+    <string name="categories2">Sweets</string>
+    <string name="categorie3">Seafood</string>
+    <string name="categorie4">Pasta</string>
+    <string name="categorie5">Sauces</string>
+    <string name="categorie6">Meat</string>
+
+    <!-- Ingredientes -->
+    <string name="R1Ing1">1 large onion</string>
+    <string name="R1Ing2">3 or 4 cloves of garlic</string>
+    <string name="R1Ing3">800 g tinned tomato</string>
+    <string name="R1Ing4">4 tablespoons of olive oil</string>
+    <string name="R1Ing5">600 g chicken breast or minced meat (500 g if already cooked)</string>
+    <string name="R1Ing6">1 bay leaf</string>
+    <string name="R1Ing7">Salt</string>
+    <string name="R1Ing8">Ground black pepper</string>
+    <string name="R1Ing9">1 pinch of oregano</string>
+    <string name="R1Ing10">40 g butter</string>
+    <string name="R1Ing11">40 g wheat flour</string>
+    <string name="R1Ing12">600 ml whole milk</string>
+    <string name="R1Ing13">Nutmeg</string>
+    <string name="R1Ing14">12 to 15 lasagne sheets (approx. 250 g)</string>
+    <string name="R1Ing15">100 g grated cheese for gratin (parmesan, gouda, mozzarella)</string>
+
+
+    <string name="nameList2">Pumpkin space latte</string>
+    <string name="listUser2">coffehome23</string>
+    <string name="R2Ing1">400 ml. whole milk</string>
+    <string name="R2Ing2">50 g. roasted pumpkin puree</string>
+    <string name="R2Ing3">100 ml. espresso coffee</string>
+    <string name="R2Ing4">1 dessert spoon of cinnamon</string>
+    <string name="R2Ing5">½ teaspoon ground cloves</string>
+    <string name="R2Ing6">½ teaspoon ground ginger</string>
+    <string name="R2Ing7">½ teaspoon ground nutmeg</string>
+    <string name="R2Ing8">1 teaspoon vanilla essence</string>
+    <string name="R2Ing9">Whipping cream</string>
+    <string name="R2Ing10">Sugar to taste</string>
+    <string name="R2Ing11">Pinch of pepper (optional)</string>
+
+
+    <string name="nameList3">Chickpea hummus</string>
+    <string name="listUser3">cookig.area</string>
+    <string name="R3Ing1">400 g. cooked chickpeas</string>
+    <string name="R3Ing2">2 dessert spoons of ground cumin and 1 teaspoon of ground cinnamon powder</string>
+    <string name="R3Ing3">Water or the broth from cooking the chickpeas </string>
+    <string name="R3Ing4">2 small cloves of garlic</string>
+    <string name="R3Ing5">salt and freshly ground black pepper (to taste)</string>
+    <string name="R3Ing6">1 teaspoon of sweet or spicy paprika from La Vera</string>
+    <string name="R3Ing7">3 tablespoons Tahini</string>
+    <string name="R3Ing8">1 sprig of coriander</string>
+    <string name="R3Ing9">120 ml extra virgin olive oil</string>
+    <string name="R3Ing10">Juice of a small lemon or lime</string>
+
+
+    <string name="profile">Profile</string>
+    <string name="userProfile">sympah</string>
+
+    <string name="post">Post</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="decor">·</string>
+
+    <string name="postN">53</string>
+    <string name="followersN">250</string>
+    <string name="followingN">163</string>
+
+    <string name="editProfile">Edit Profile</string>
+
+    <string name="profileBooke1">Fluffy pancakes</string>
+    <string name="profileBooke2">Japanese-style</string>
+    <string name="profileBooke3">Toast with har</string>
+    <string name="profileBooke4">Latte macchiato</string>
+    <string name="profileBooke5">Rice balls, waf</string>
+    <string name="profileBooke6">Cheese noodles</string>
+
+    <string name="likesBook1">616</string>
+    <string name="likesBook2">120</string>
+    <string name="likesBook3">118</string>
+    <string name="likesBook4">200</string>
+
+    <string name="profileShort1">Avocado toast</string>
+    <string name="profileShort2">Oatmeal with</string>
+    <string name="profileShort3">Butter cookies</string>
+    <string name="profileShort4">Arepas</string>
+
+    <string name="shortBook1">350</string>
+    <string name="shortBook2">300</string>
+    <string name="shortBook3">150</string>
+
+    <string name="profileSaved1">Gourmet</string>
+    <string name="profileSaved2">Sweet</string>
+    <string name="profileSaved3">Christmas</string>
+    <string name="profileSaved4">Cold drinks</string>
+
+    <string name="salad">Salads</string>
+    <string name="salad1">Salad with avocado</string>
+    <string name="salad2">Chickpea salad</string>
+    <string name="salad3">Chicken salad</string>
+    <string name="salad4">Pasta salad</string>
+    <string name="salad5">Chicken, eggs and</string>
+    <string name="salad6">Mexican chicken salad</string>
+    <string name="salad7">Detox salad</string>
+    <string name="salad8">Greek salad</string>
+
+
+    <string name="comments">Coments</string>
+    <string name="userComments">ruiz23_</string>
+    <string name="commented">commented:</string>
+    <string name="comment">I will</string>
+    <string name="commentTime">3 d</string>
+
+    <string name="likes">Likes</string>
+    <string name="like">liked your recipe</string>
+    <string name="likeTime">3 d</string>
+
+    <string name="shortTime">2 h</string>
+
+    <string name="shortComment">Add a comment</string>
+
+    <string name="gourmet">Gourmet</string>
+    <string name="gourmet1">Beef rib with</string>
+    <string name="gourmet2">Spaghetti carbonara</string>
+    <string name="gourmet3">Meatballs with sauce</string>
+    <string name="gourmet4">Salmon with lemon</string>
+    <string name="gourmet5">Lobster with sauce</string>
+    <string name="gourmet6">Prawns with asparagus</string>
+
+
+    <string name="settings">Your account</string>
+    <string name="settings1">Account Center</string>
+    <string name="settings2">Password, security, personal data</string>
+    <string name="settings3">Notifications</string>
+    <string name="settings4">Ratings</string>
+    <string name="settings5">Suggested Content</string>
+    <string name="settings6">Comments</string>
+    <string name="settings7">Account Privacy</string>
+    <string name="settings8">Language</string>
+    <string name="settings9">Help</string>
+    <string name="settings10">Account status</string>
+    <string name="settings11">Information</string>
+    <string name="settings12">Add account</string>
+    <string name="settings13">Log off</string>
+
+
+    <string name="editProfile1">Edit photo</string>
+    <string name="editProfile2">User name</string>
+    <string name="editProfile3">Description</string>
+    <string name="editProfile4">Add link</string>
+    <string name="editProfile5">Sex</string>
+    <string name="chageToProfessional">Change to professional account</string>
+
+    <string name="next">Next</string>
+
+    <string name="addRecipe1">New recipe</string>
+    <string name="addRecipe2">Share</string>
+    <string name="addRecipe3">Write the name of the recipe</string>
+    <string name="addRecipe4">Mark publication as secret</string>
+    <string name="addRecipe5">Time</string>
+    <string name="addRecipe6">Servings</string>
+    <string name="addRecipe7">Difficulty</string>
+    <string name="addRecipe8">Ingredients</string>
+    <string name="addRecipe9">Write the list of ingredients here</string>
+    <string name="addRecipe10">Instructions</string>
+    <string name="addRecipe11">Write the recipe instructions here</string>
+    <string name="addRecipe12">Categories</string>
+
+    <string name="time1">00:04</string>
+    <string name="time2">00:10</string>
+    <string name="time3">00:20</string>
+    <string name="time4">00:09</string>
+    <string name="time5">00:15</string>
+    <string name="time6">00:18</string>
+
+    <string name="difficulty1">Easy</string>
+    <string name="difficulty2">Medium</string>
+    <string name="difficulty3">Hard</string>
+    <string name="difficulty4">Professional</string>
+
+    <string name="step1">1 Step: Chop the onion and garlic and crush the tomato, sauté the onion in the oil, add the garlic and saute for a further 1 minute.</string>
+    <string name="step2">2 Step: Place the chicken breasts, cover with the tomato, add 1 bay leaf and season with salt and pepper. Cook for 30 or 40 minutes over medium heat.</string>
+    <string name="step3">3 Step: Shred the chicken and add it to the sauce, remove the bay leaf, season with oregano and season with salt.</string>
+    <string name="step4">4 Step: Prepare the bechamel sauce by mixing the hot butter with the flour and adding the milk.</string>
+    <string name="step5">5 Step: Spread the base of the dish with a couple of spoonfuls of bechamel sauce and place a layer of pasta on top. Spread a third of the chicken on top. Repeat the layers of bechamel, pasta and chicken twice more and finish with a fourth layer of pasta.</string>
+    <string name="step6">6 Step: Cover with the rest of the bechamel sauce, sprinkle with grated cheese and finally, bake the chicken lasagne in the oven for 30 minutes at 180 ºC and leave to stand for 15 minutes before serving.</string>
+
+
+    <string name="commentsViewName">xhopper_2</string>
+    <string name="commentsViewTime">2 h</string>
+    <string name="commentsViewReview">Review</string>
+    <string name="commentsViewComment">This is an amazing recipe, I will try to prepare it at home.</string>
+
+    <string name="userReview">Add a comment and a review</string>
+
+    <string name="vid1">Edit cover</string>
+    <string name="vid2">Write a description</string>
+    <string name="vid3">Add ingredient list</string>
+    <string name="vid4">Write a description</string>
+    <string name="vid5">Add ingredient list</string>
+    <string name="vid6">Add categories</string>
+    <string name="vid7">Save draft</string>
+    <string name="vid8">Share</string>
+
+    <string name="searchView">Advanced</string>
+    <string name="searchView1">Recent</string>
+    <string name="searchView2">Recipes</string>
+    <string name="searchView3">Profiles</string>
+
+    <string name="searchAdvance">Advanced search</string>
+    <string name="searchAdvance1">Code name</string>
+    <string name="searchAdvance2">Profile name</string>
+    <string name="searchAdvance3">More</string>
+    <string name="searchAdvance8">Rating</string>
+    <string name="searchAdvance4">Date</string>
+    <string name="searchAdvance5">From</string>
+    <string name="searchAdvance6">Until</string>
+    <string name="searchAdvance5F">05/05/23</string>
+    <string name="searchAdvance6F">17/11/23</string>
+    <string name="searchAdvance7">Search</string>
+
+    <string name="voiceSearch">Listening..</string>
+    <string name="count">0</string>
+
+
+    <string name="proffesional">Register your account as professional chef</string>
+    <string name="proffesional1">If you register as a chef you will have access to statistics about your recipes, new contact options and more.</string>
+    <string name="proffesional2">Get information about your recipes</string>
+    <string name="proffesional3">Get statistics on your recipes and see how your publications are performing.</string>
+    <string name="proffesional4">Add contact options</string>
+    <string name="proffesional5">Add a contact button on your profile so that people can easily get in touch with you.</string>
+    <string name="proffesional6">Add contact options</string>
+    <string name="proffesional7">Add contact options</string>
+    <string name="proffesional8">Add contact options</string>
+
+    <string name="normaAccount">Change to normal account</string>
+    <string name="messages">Messages</string>
+    <string name="request">Request</string>
+    <string name="messageUser">whu_y23</string>
+    <string name="newMessage">New messages</string>
+    <string name="numMessage">3</string>
+    <string name="timeMessage">4 h</string>
+    <string name="overView">Account overview</string>
+    <string name="reach">Reach</string>
+    <string name="publications">Publications</string>
+    <string name="acept">Acept</string>
+
+    <string name="changoToNormal">Change to normal account</string>
+    <string name="normalAccount">Would you like to switch to a normal account?</string>
+    <string name="no">No</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

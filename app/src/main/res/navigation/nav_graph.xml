@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.monroysrecipes.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.monroysrecipes.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/list"
+        android:name="com.example.monroysrecipes.List"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.monroysrecipes.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/add"
+        android:name="com.example.monroysrecipes.Add"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/startOptions"
+        android:name="com.example.monroysrecipes.StartOptions"
+        android:label="fragment_start_options"
+        tools:layout="@layout/fragment_start_options" />
+    <fragment
+        android:id="@+id/startLogin"
+        android:name="com.example.monroysrecipes.StartLogin"
+        android:label="fragment_start_login"
+        tools:layout="@layout/fragment_start_login" />
+    <fragment
+        android:id="@+id/startRegister"
+        android:name="com.example.monroysrecipes.StartRegister"
+        android:label="fragment_start_register"
+        tools:layout="@layout/fragment_start_register" />
+    <fragment
+        android:id="@+id/start"
+        android:name="com.example.monroysrecipes.Start"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/startSecuence"
+        android:name="com.example.monroysrecipes.StartSecuence"
+        android:label="fragment_start_secuence"
+        tools:layout="@layout/fragment_start_secuence" />
+    <fragment
+        android:id="@+id/forgotPassword"
+        android:name="com.example.monroysrecipes.ForgotPassword"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/forgotPasswordCode"
+        android:name="com.example.monroysrecipes.ForgotPasswordCode"
+        android:label="fragment_forgot_password_code"
+        tools:layout="@layout/fragment_forgot_password_code" />
+
+    <action
+        android:id="@+id/action_returnStartOptions"
+        app:destination="@+id/startOptions" />
+
+    <action
+        android:id="@+id/action_goLogin"
+        app:destination="@+id/startLogin" />
+
+    <action
+        android:id="@+id/action_goForgotPassword"
+        app:destination="@+id/forgotPassword" />
+
+    <action
+        android:id="@+id/action_goPasswordCode"
+        app:destination="@+id/forgotPasswordCode" />
+
+
+    <action
+        android:id="@+id/action_goRegister"
+        app:destination="@+id/startRegister" />
+
+    <action
+        android:id="@+id/action_goLikes"
+        app:destination="@+id/likes" />
+
+    <action
+        android:id="@+id/action_goComments"
+        app:destination="@+id/comments" />
+
+    <action
+        android:id="@+id/action_goShorthRecipes"
+        app:destination="@+id/shorthRecipes" />
+
+    <action
+        android:id="@+id/action_goCategories1"
+        app:destination="@+id/categories" />
+
+    <action
+        android:id="@+id/action_goSearch"
+        app:destination="@+id/search" />
+
+    <action
+        android:id="@+id/action_goHome"
+        app:destination="@+id/home" />
+
+    <action
+        android:id="@+id/action_goNewPassword"
+        app:destination="@+id/newPassword" />
+
+    <action
+        android:id="@+id/action_goSavedUser"
+        app:destination="@+id/savedUser" />
+
+    <action
+        android:id="@+id/action_goRecipe"
+        app:destination="@+id/recipe" />
+
+    <action
+        android:id="@+id/action_goSettings"
+        app:destination="@+id/settings" />
+
+    <action
+        android:id="@+id/action_goEditProfile"
+        app:destination="@+id/editProfile" />
+
+    <action
+        android:id="@+id/action_goProfile"
+        app:destination="@+id/profile" />
+
+    <action
+        android:id="@+id/action_goSearchView"
+        app:destination="@+id/searchView" />
+
+    <action
+        android:id="@+id/action_goAddRecipe"
+        app:destination="@+id/addRecipe" />
+
+    <action
+        android:id="@+id/action_goAddShort"
+        app:destination="@+id/addShort" />
+
+    <action
+        android:id="@+id/action_goAdd"
+        app:destination="@+id/add" />
+
+
+    <action
+        android:id="@+id/action_goList"
+        app:destination="@+id/list" />
+
+    <action
+        android:id="@+id/action_goStatistics"
+        app:destination="@+id/statistics" />
+
+    <action
+        android:id="@+id/action_goProffesionalAccount"
+        app:destination="@+id/professionalAccount" />
+
+    <action
+        android:id="@+id/action_goNormalAccount"
+        app:destination="@+id/normalAccount" />
+
+    <action
+        android:id="@+id/action_goPA1"
+        app:destination="@+id/proffesionaAccountPresent1" />
+
+    <action
+        android:id="@+id/action_goPA2"
+        app:destination="@+id/proffesionaAccountPresent2" />
+
+    <action
+        android:id="@+id/action_goChats"
+        app:destination="@+id/chats" />
+
+
+    <fragment
+        android:id="@+id/newPassword"
+        android:name="com.example.monroysrecipes.newPassword"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password" />
+    <fragment
+        android:id="@+id/comments"
+        android:name="com.example.monroysrecipes.comments"
+        android:label="fragment_comments"
+        tools:layout="@layout/fragment_comments" />
+    <fragment
+        android:id="@+id/likes"
+        android:name="com.example.monroysrecipes.likes"
+        android:label="fragment_likes"
+        tools:layout="@layout/fragment_likes" />
+    <fragment
+        android:id="@+id/shorthRecipes"
+        android:name="com.example.monroysrecipes.shorthRecipes"
+        android:label="fragment_shorth_recipes"
+        tools:layout="@layout/fragment_shorth_recipes" />
+    <fragment
+        android:id="@+id/bookRecipes"
+        android:name="com.example.monroysrecipes.bookRecipes"
+        android:label="fragment_book_recipes"
+        tools:layout="@layout/fragment_book_recipes" />
+    <fragment
+        android:id="@+id/savedRecipes"
+        android:name="com.example.monroysrecipes.savedRecipes"
+        android:label="fragment_saved_recipes"
+        tools:layout="@layout/fragment_saved_recipes" />
+    <fragment
+        android:id="@+id/shorthUserRecipes"
+        android:name="com.example.monroysrecipes.shorthUserRecipes"
+        android:label="fragment_shorth_user_recipes"
+        tools:layout="@layout/fragment_shorth_user_recipes" />
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.example.monroysrecipes.Categories"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" />
+    <fragment
+        android:id="@+id/savedUser"
+        android:name="com.example.monroysrecipes.SavedUser"
+        android:label="fragment_saved_user"
+        tools:layout="@layout/fragment_saved_user" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.monroysrecipes.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/editProfile"
+        android:name="com.example.monroysrecipes.EditProfile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/recipe"
+        android:name="com.example.monroysrecipes.Recipe"
+        android:label="fragment_recipe"
+        tools:layout="@layout/fragment_recipe" />
+    <fragment
+        android:id="@+id/images"
+        android:name="com.example.monroysrecipes.Images"
+        android:label="fragment_images"
+        tools:layout="@layout/fragment_images" />
+    <fragment
+        android:id="@+id/addRecipe"
+        android:name="com.example.monroysrecipes.AddRecipe"
+        android:label="fragment_add_recipe"
+        tools:layout="@layout/fragment_add_recipe" />
+    <fragment
+        android:id="@+id/videos"
+        android:name="com.example.monroysrecipes.Videos"
+        android:label="fragment_videos"
+        tools:layout="@layout/fragment_videos" />
+    <fragment
+        android:id="@+id/addShort"
+        android:name="com.example.monroysrecipes.AddShort"
+        android:label="fragment_add_short"
+        tools:layout="@layout/fragment_add_short" />
+    <fragment
+        android:id="@+id/commentsView"
+        android:name="com.example.monroysrecipes.CommentsView"
+        android:label="fragment_comments_view"
+        tools:layout="@layout/fragment_comments_view" />
+    <fragment
+        android:id="@+id/searchView"
+        android:name="com.example.monroysrecipes.SearchView"
+        android:label="fragment_search_view"
+        tools:layout="@layout/fragment_search_view" />
+    <fragment
+        android:id="@+id/bottomSheet"
+        android:name="com.example.monroysrecipes.BottomSheet"
+        android:label="fragment_bottom_sheet"
+        tools:layout="@layout/fragment_bottom_sheet" />
+    <fragment
+        android:id="@+id/recipesSearch"
+        android:name="com.example.monroysrecipes.RecipesSearch"
+        android:label="fragment_recipes_search"
+        tools:layout="@layout/fragment_recipes_search" />
+    <fragment
+        android:id="@+id/profilesSearch"
+        android:name="com.example.monroysrecipes.ProfilesSearch"
+        android:label="fragment_profiles_search"
+        tools:layout="@layout/fragment_profiles_search" />
+    <fragment
+        android:id="@+id/advancedSearch"
+        android:name="com.example.monroysrecipes.AdvancedSearch"
+        android:label="fragment_advanced_search"
+        tools:layout="@layout/fragment_advanced_search" />
+    <fragment
+        android:id="@+id/voiceSearch"
+        android:name="com.example.monroysrecipes.VoiceSearch"
+        android:label="fragment_voice_search"
+        tools:layout="@layout/fragment_voice_search" />
+    <fragment
+        android:id="@+id/statistics"
+        android:name="com.example.monroysrecipes.Statistics"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/professionalAccount"
+        android:name="com.example.monroysrecipes.ProfessionalAccount"
+        android:label="fragment_professional_account"
+        tools:layout="@layout/fragment_professional_account" />
+    <fragment
+        android:id="@+id/proffesionaAccountPresent1"
+        android:name="com.example.monroysrecipes.ProffesionaAccountPresent1"
+        android:label="fragment_proffesiona_account_present1"
+        tools:layout="@layout/fragment_proffesiona_account_present1" />
+    <fragment
+        android:id="@+id/proffesionaAccountPresent2"
+        android:name="com.example.monroysrecipes.ProffesionaAccountPresent2"
+        android:label="fragment_proffesiona_account_present2"
+        tools:layout="@layout/fragment_proffesiona_account_present2" />
+    <fragment
+        android:id="@+id/chats"
+        android:name="com.example.monroysrecipes.Chats"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats" />
+    <fragment
+        android:id="@+id/normalAccount"
+        android:name="com.example.monroysrecipes.NormalAccount"
+        android:label="fragment_normal_account"
+        tools:layout="@layout/fragment_normal_account" />
+
+
+</navigation>

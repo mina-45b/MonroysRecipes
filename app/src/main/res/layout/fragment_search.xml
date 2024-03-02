@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingRight="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView1"
+                style="@style/SearchViewStyle"
+                android:layout_width="325dp"
+                android:layout_height="38dp"
+                app:defaultQueryHint="@string/search"
+                app:iconifiedByDefault="false" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/mic1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/mic"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout4" />
+
+        <TextView
+            android:id="@+id/dailyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/outfit_bold"
+            android:text="@string/searchTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dailyText"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp">
+
+
+                    <ImageView
+                        android:id="@+id/daily1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/imagen_4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/outfit_bold"
+                        android:text="@string/searchRecipe1"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/daily1" />
+
+                    <ImageButton
+                        android:id="@+id/go_RecipeSearch1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="76dp"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/return2"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                        app:layout_constraintStart_toEndOf="@+id/textView6"
+                        app:layout_constraintTop_toTopOf="@+id/textView6"
+                        app:layout_constraintVertical_bias="0.4" />
+
+                    <LinearLayout
+                        android:id="@+id/userprofile1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5sp"
+                            android:src="@drawable/p77"
+                            app:shapeAppearanceOverlay="@style/roundeimageview"
+                            app:strokeColor="@color/gray_claro"
+                            app:strokeWidth="2dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5sp"
+                            android:fontFamily="@font/outfit_light"
+                            android:text="@string/searcUser1"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:src="@drawable/clock"
+                        app:layout_constraintStart_toStartOf="@+id/imageView7"
+                        app:layout_constraintTop_toTopOf="@+id/userprofile1" />
+
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/outfit_bold"
+                        android:paddingRight="10sp"
+                        android:text="@string/clockSearch1"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                        app:layout_constraintStart_toEndOf="@+id/imageView6"
+                        app:layout_constraintTop_toTopOf="@+id/imageView6"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="83dp"
+                        android:src="@drawable/user_group"
+                        app:layout_constraintBottom_toBottomOf="@+id/userprofile1"
+                        app:layout_constraintStart_toEndOf="@+id/userprofile1"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/outfit_bold"
+                        android:paddingRight="10sp"
+                        android:text="@string/groupSearch1"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                        app:layout_constraintStart_toEndOf="@+id/imageView7"
+                        app:layout_constraintTop_toTopOf="@+id/imageView7"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar1"
+                        android:layout_width="236dp"
+                        android:layout_height="41dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX=".7"
+                        android:scaleY=".7"
+                        android:theme="@style/RatingBar.Yellow"
+                        android:transformPivotX="0dp"
+                        app:layout_constraintEnd_toEndOf="@+id/textView7"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/userprofile1"
+                        app:layout_constraintTop_toBottomOf="@+id/userprofile1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5sp" >
+
+                    <ImageView
+                        android:id="@+id/daily2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/imagen_5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/outfit_bold"
+                        android:text="@string/searchRecipe2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/daily2" />
+
+                    <ImageButton
+                        android:id="@+id/go_RecipeSearch2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="76dp"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/return2"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                        app:layout_constraintStart_toEndOf="@+id/textView2"
+                        app:layout_constraintTop_toTopOf="@+id/textView2"
+                        app:layout_constraintVertical_bias="0.4" />
+
+                    <LinearLayout
+                        android:id="@+id/userprofile5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5sp"
+                            android:src="@drawable/p6"
+                            app:shapeAppearanceOverlay="@style/roundeimageview"
+                            app:strokeColor="@color/gray_claro"
+                            app:strokeWidth="2dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5sp"
+                            android:fontFamily="@font/outfit_light"
+                            android:text="@string/searcUser2"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:src="@drawable/clock"
+                        app:layout_constraintStart_toStartOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="@+id/userprofile5" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/outfit_bold"
+                        android:paddingRight="10sp"
+                        android:text="@string/clockSearch2"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="@+id/imageView3"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="19dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="83dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/user_group"
+                        app:layout_constraintBottom_toBottomOf="@+id/userprofile5"
+                        app:layout_constraintStart_toEndOf="@+id/userprofile5"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/outfit_bold"
+                        android:paddingRight="10sp"
+                        android:text="@string/groupSearch2"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+
+                    <RatingBar
+                        android:id="@+id/ratingBar2"
+                        android:layout_width="236dp"
+                        android:layout_height="41dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX=".7"
+                        android:scaleY=".7"
+                        android:theme="@style/RatingBar.Yellow"
+                        android:transformPivotX="0dp"
+                        app:layout_constraintStart_toStartOf="@+id/userprofile5"
+                        app:layout_constraintTop_toBottomOf="@+id/userprofile5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/categoriesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/outfit_bold"
+            android:text="@string/categories"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flexboxLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoriesText">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_flexGrow="1"
+                app:layout_flexShrink="1">
+
+                <ImageView
+                    android:id="@+id/categoriImage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/image_salad"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/categoriesText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="@string/categories1"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoriImage1" />
+
+                <ImageButton
+                    android:id="@+id/go_Categories1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="132dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/return2"
+                    app:layout_constraintBottom_toBottomOf="@+id/categoriesText1"
+                    app:layout_constraintLeft_toLeftOf="@id/categoriesText1"
+                    app:layout_constraintTop_toTopOf="@+id/categoriesText1"
+                    app:layout_constraintVertical_bias="0.296" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_flexGrow="1"
+                app:layout_flexShrink="1" >
+
+                <ImageView
+                    android:id="@+id/categoriImage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/image_sweet"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/categoriesText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="@string/categories2"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoriImage2" />
+
+                <ImageButton
+                    android:id="@+id/go_Categories2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="132dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/return2"
+                    app:layout_constraintBottom_toBottomOf="@+id/categoriesText2"
+                    app:layout_constraintLeft_toLeftOf="@id/categoriesText2"
+                    app:layout_constraintTop_toTopOf="@+id/categoriesText2"
+                    app:layout_constraintVertical_bias="0.296" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_flexGrow="1"
+                app:layout_flexShrink="1" >
+
+                <ImageView
+                    android:id="@+id/categoriImage3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/image_seafood"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/categoriesText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="@string/categorie3"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoriImage3" />
+
+                <ImageButton
+                    android:id="@+id/go_Categories3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="132dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/return2"
+                    app:layout_constraintBottom_toBottomOf="@+id/categoriesText3"
+                    app:layout_constraintLeft_toLeftOf="@id/categoriesText3"
+                    app:layout_constraintTop_toTopOf="@+id/categoriesText3"
+                    app:layout_constraintVertical_bias="0.296" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_flexGrow="1"
+                app:layout_flexShrink="1" >
+
+                <ImageView
+                    android:id="@+id/categoriImage4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/image_pasta"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/categoriesText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="@string/categorie4"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoriImage4" />
+
+                <ImageButton
+                    android:id="@+id/go_Categories4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="132dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/return2"
+                    app:layout_constraintBottom_toBottomOf="@+id/categoriesText4"
+                    app:layout_constraintLeft_toLeftOf="@id/categoriesText4"
+                    app:layout_constraintTop_toTopOf="@+id/categoriesText4"
+                    app:layout_constraintVertical_bias="0.296" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                app:layout_flexGrow="1"
+                app:layout_flexShrink="1" >
+
+                <ImageView
+                    android:id="@+id/categoriImage5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/image_sauces"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/categoriesText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="@string/categorie5"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoriImage5" />
+
+                <ImageButton
+                    android:id="@+id/go_Categories5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="132dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/return2"
+                    app:layout_constraintBottom_toBottomOf="@+id/categoriesText5"
+                    app:layout_constraintLeft_toLeftOf="@id/categoriesText5"
+                    app:layout_constraintTop_toTopOf="@+id/categoriesText5"
+                    app:layout_constraintVertical_bias="0.296" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_flexGrow="1"
+                app:layout_flexShrink="1" >
+
+                <ImageView
+                    android:id="@+id/categoriImage6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/image_meat"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/categoriesText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="@string/categorie6"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoriImage6" />
+
+                <ImageButton
+                    android:id="@+id/go_Categories6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="132dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/return2"
+                    app:layout_constraintBottom_toBottomOf="@+id/categoriesText6"
+                    app:layout_constraintLeft_toLeftOf="@id/categoriesText6"
+                    app:layout_constraintTop_toTopOf="@+id/categoriesText6"
+                    app:layout_constraintVertical_bias="0.296" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

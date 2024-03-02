@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="txtSolidRoundedRightCorner">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/outfit_bold</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+        <item name="android:background">@drawable/rounded_button_register</item>
+    </style>
+    
+    <style name="roundeimageview">
+       <item name="cornerFamily"> rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RatingBar.Yellow" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/yellow</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+    <style name="ProgressBarCircularCustomColor" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/gray_claro</item>
+        <item name="android:indeterminateOnly">false</item>
+    </style>
+
+
+    <style name="SearchViewStyle">
+        <!-- Color de fondo del SearchView -->
+        <item name="android:background">@drawable/search_view</item>
+        <item name="android:iconifiedByDefault">false</item>
+    </style>
+
+    <style name="YellowCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:content">@color/yellow</item>
+    </style>
+
+
+
+
+
+
+</resources>

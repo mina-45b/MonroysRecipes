@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvancedSearch">
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/searchAdvance"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/searchItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/searchAdvance1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/minus_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/outfit_bold"
+        android:hint="@string/recipe1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchItem1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchItem1"
+        app:layout_constraintTop_toTopOf="@+id/searchItem1" />
+
+    <TextView
+        android:id="@+id/searchItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/searchAdvance2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/outfit_bold"
+        android:hint="@string/username1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchItem2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchItem2"
+        app:layout_constraintTop_toTopOf="@+id/searchItem2" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <TextView
+        android:id="@+id/itemMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/searchAdvance3"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/itemRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/searchAdvance8"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemMore" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:theme="@style/RatingBar.Yellow"
+        app:layout_constraintBottom_toBottomOf="@+id/itemRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toEndOf="@+id/itemRating"
+        app:layout_constraintTop_toTopOf="@+id/itemRating" />
+
+    <ImageView
+        android:id="@+id/itemTime"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/clock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar1" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textItemTime"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/addRecipe5"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemTime"
+        app:layout_constraintStart_toEndOf="@+id/itemTime"
+        app:layout_constraintTop_toTopOf="@+id/itemTime" />
+
+    <ImageButton
+        android:id="@+id/minus1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/minus_square"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMore1"
+        app:layout_constraintStart_toEndOf="@+id/textItemTime"
+        app:layout_constraintTop_toTopOf="@+id/viewMore1"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <TextView
+        android:id="@+id/viewMore1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_search"
+        android:fontFamily="@font/outfit_bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="@string/count"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/plus1"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toEndOf="@+id/minus1"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar1" />
+
+    <ImageButton
+        android:id="@+id/plus1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/plus_square"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMore1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewMore1" />
+
+    <ImageView
+        android:id="@+id/itemServ"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/user_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus1" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textItemServ"
+        android:layout_width="71dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/addRecipe6"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemServ"
+        app:layout_constraintStart_toEndOf="@+id/itemServ"
+        app:layout_constraintTop_toTopOf="@+id/itemServ" />
+
+    <ImageButton
+        android:id="@+id/minus2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/minus_square"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMore2"
+        app:layout_constraintStart_toEndOf="@+id/textItemServ"
+        app:layout_constraintTop_toTopOf="@+id/viewMore2" />
+
+    <TextView
+        android:id="@+id/viewMore2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_search"
+        android:fontFamily="@font/outfit_bold"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="@string/count"
+        app:layout_constraintEnd_toStartOf="@+id/plus2"
+        app:layout_constraintStart_toEndOf="@+id/minus2"
+        app:layout_constraintTop_toBottomOf="@+id/plus1" />
+
+    <ImageButton
+        android:id="@+id/plus2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/plus_square"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMore2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewMore2" />
+
+    <ImageView
+        android:id="@+id/itemDif"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/emotion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus2" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textItemDif"
+        android:layout_width="71dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/addRecipe7"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemDif"
+        app:layout_constraintStart_toEndOf="@+id/itemDif"
+        app:layout_constraintTop_toTopOf="@+id/itemDif" />
+
+    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+        android:id="@+id/group_choices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textItemDif"
+        app:layout_constraintTop_toBottomOf="@+id/minus2"
+        app:tbgCheckedButton="@+id/choice_a">
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+            android:id="@+id/choice_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/difficulty1"
+            android:textSize="10sp" />
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+            android:id="@+id/choice_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/difficulty2"
+            android:textSize="10sp" />
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+            android:id="@+id/choice_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/difficulty3"
+            android:textSize="10sp" />
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+            android:id="@+id/choice_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/difficulty4"
+            android:textSize="10sp" />
+
+    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+    <ImageView
+        android:id="@+id/itemDate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDif" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:text="@string/searchAdvance4"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemDate"
+        app:layout_constraintStart_toEndOf="@+id/itemDate"
+        app:layout_constraintTop_toTopOf="@+id/itemDate" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:text="@string/searchAdvance5"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/group_choices" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_search"
+        android:fontFamily="@font/outfit_bold"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView33"
+        app:layout_constraintStart_toEndOf="@+id/textView33"
+        app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:text="@string/searchAdvance6"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/group_choices" />
+
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_search"
+        android:fontFamily="@font/outfit_bold"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView35"
+        app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+    <Button
+        android:id="@+id/searchrecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/searchAdvance7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDate"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

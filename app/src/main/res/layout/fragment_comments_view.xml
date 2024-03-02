@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentsView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="5sp"
+                android:src="@drawable/reelfourp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/gray_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewTime"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/review1"
+                app:layout_constraintStart_toEndOf="@+id/name1"
+                app:layout_constraintTop_toTopOf="@+id/name1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/review1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewReview"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView1"
+                app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX=".7"
+                android:scaleY=".7"
+                android:theme="@style/RatingBar.Yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/review1"
+                app:layout_constraintStart_toEndOf="@+id/review1"
+                app:layout_constraintTop_toTopOf="@+id/review1" />
+
+            <ImageButton
+                android:id="@+id/imageLove1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/love"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewComment"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView1"
+                app:layout_constraintTop_toBottomOf="@+id/imageLove1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="5sp"
+                android:src="@drawable/reelfourp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/gray_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewTime"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/review2"
+                app:layout_constraintStart_toEndOf="@+id/name2"
+                app:layout_constraintTop_toTopOf="@+id/name2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/review2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewReview"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView2"
+                app:layout_constraintTop_toBottomOf="@+id/name2" />
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX=".7"
+                android:scaleY=".7"
+                android:theme="@style/RatingBar.Yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/review2"
+                app:layout_constraintStart_toEndOf="@+id/review2"
+                app:layout_constraintTop_toTopOf="@+id/review2" />
+
+            <ImageButton
+                android:id="@+id/imageLove2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/love"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewComment"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageLove2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="5sp"
+                android:src="@drawable/reelfourp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/gray_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewTime"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/review3"
+                app:layout_constraintStart_toEndOf="@+id/name3"
+                app:layout_constraintTop_toTopOf="@+id/name3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/review3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewReview"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView3"
+                app:layout_constraintTop_toBottomOf="@+id/name3" />
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX=".7"
+                android:scaleY=".7"
+                android:theme="@style/RatingBar.Yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/review3"
+                app:layout_constraintStart_toEndOf="@+id/review3"
+                app:layout_constraintTop_toTopOf="@+id/review3" />
+
+            <ImageButton
+                android:id="@+id/imageLove3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/love"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewComment"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView3"
+                app:layout_constraintTop_toBottomOf="@+id/imageLove3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="5sp"
+                android:src="@drawable/reelfourp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/gray_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewTime"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/review4"
+                app:layout_constraintStart_toEndOf="@+id/name4"
+                app:layout_constraintTop_toTopOf="@+id/name4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/review4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewReview"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView4"
+                app:layout_constraintTop_toBottomOf="@+id/name4" />
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX=".7"
+                android:scaleY=".7"
+                android:theme="@style/RatingBar.Yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/review4"
+                app:layout_constraintStart_toEndOf="@+id/review4"
+                app:layout_constraintTop_toTopOf="@+id/review4" />
+
+            <ImageButton
+                android:id="@+id/imageLove4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/love"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewComment"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView4"
+                app:layout_constraintTop_toBottomOf="@+id/imageLove4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="5sp"
+                android:src="@drawable/reelfourp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/gray_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewTime"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/review5"
+                app:layout_constraintStart_toEndOf="@+id/name5"
+                app:layout_constraintTop_toTopOf="@+id/name5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/review5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewReview"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView5"
+                app:layout_constraintTop_toBottomOf="@+id/name5" />
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX=".7"
+                android:scaleY=".7"
+                android:theme="@style/RatingBar.Yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/review5"
+                app:layout_constraintStart_toEndOf="@+id/review5"
+                app:layout_constraintTop_toTopOf="@+id/review5" />
+
+            <ImageButton
+                android:id="@+id/imageLove5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/love"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewComment"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView5"
+                app:layout_constraintTop_toBottomOf="@+id/imageLove5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="5sp"
+                android:src="@drawable/reelfourp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/gray_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewTime"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/review6"
+                app:layout_constraintStart_toEndOf="@+id/name6"
+                app:layout_constraintTop_toTopOf="@+id/name6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/review6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewReview"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView6"
+                app:layout_constraintTop_toBottomOf="@+id/name6" />
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX=".7"
+                android:scaleY=".7"
+                android:theme="@style/RatingBar.Yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/review6"
+                app:layout_constraintStart_toEndOf="@+id/review6"
+                app:layout_constraintTop_toTopOf="@+id/review6" />
+
+            <ImageButton
+                android:id="@+id/imageLove6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/love"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewComment"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView6"
+                app:layout_constraintTop_toBottomOf="@+id/imageLove6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="5sp"
+                android:src="@drawable/reelfourp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/gray_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/name7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewTime"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/review7"
+                app:layout_constraintStart_toEndOf="@+id/name7"
+                app:layout_constraintTop_toTopOf="@+id/name7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/review7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewReview"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView7"
+                app:layout_constraintTop_toBottomOf="@+id/name7" />
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX=".7"
+                android:scaleY=".7"
+                android:theme="@style/RatingBar.Yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/review7"
+                app:layout_constraintStart_toEndOf="@+id/review7"
+                app:layout_constraintTop_toTopOf="@+id/review7" />
+
+            <ImageButton
+                android:id="@+id/imageLove7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/love"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewComment"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView7"
+                app:layout_constraintTop_toBottomOf="@+id/imageLove7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="5sp"
+                android:src="@drawable/reelfourp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundeimageview"
+                app:strokeColor="@color/gray_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/name8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewTime"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/review8"
+                app:layout_constraintStart_toEndOf="@+id/name8"
+                app:layout_constraintTop_toTopOf="@+id/name8"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/review8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/commentsViewReview"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView8"
+                app:layout_constraintTop_toBottomOf="@+id/name8" />
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX=".7"
+                android:scaleY=".7"
+                android:theme="@style/RatingBar.Yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/review8"
+                app:layout_constraintStart_toEndOf="@+id/review8"
+                app:layout_constraintTop_toTopOf="@+id/review8" />
+
+            <ImageButton
+                android:id="@+id/imageLove8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/love"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/commentsViewComment"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView8"
+                app:layout_constraintTop_toBottomOf="@+id/imageLove8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
