@@ -38,6 +38,7 @@ Este proyecto es el desarrollo de la interfaz de la aplicación Monroy's Recipes
 ## Demo
 
 Vista de las pantallas principales:
+
 ![Demo](demo.gif)
 
 ## Ejecución
